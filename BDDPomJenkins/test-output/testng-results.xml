@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-17T20:40:01 IST" name="Default suite" finished-at="2025-01-17T20:44:22 IST" duration-ms="260514">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.FailedRun@34a3d150]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-01-17T20:40:01 IST" name="Default test" finished-at="2025-01-17T20:44:22 IST" duration-ms="260514">
+      <class name="parallel.FailedRun">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.FailedRun@34a3d150]" started-at="2025-01-17T20:40:01 IST" name="setUpClass" finished-at="2025-01-17T20:40:02 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.FailedRun@34a3d150]" started-at="2025-01-17T20:40:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-17T20:43:49 IST" duration-ms="227089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["(MFA - Manage Profile Test) Change Email in an MFA Enabled Site (Manage Profile Frequency  = 0 (Every action))"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage profile Automation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at parallel.ManageProfileStepDefination.if_the_change_email_is_successful_user_is_logged_in(ManageProfileStepDefination.java:369)
+at ✽.if the change email is successful user is logged in(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:60)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.FailedRun@34a3d150]" started-at="2025-01-17T20:40:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-17T20:44:20 IST" duration-ms="258153" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["(MFA - Manage Profile Test) Change Phone Number  (Manage Profile Frequency  = 0 (Every action)) - in an MFA Enabled Site"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage profile Automation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button class="slds-button slds-button_outline-brand slds-m-left_x-small login-button" data-id="Log_In" c-ownsignuplogin_ownsignuplogin="">...</button> is not clickable at point (1312, 25). Other element would receive the click: <lightning-spinner c-ownglobalheader_ownglobalheader="" size="large" class="slds-spinner_container" lwc-47dd688sbro-host=""></lightning-spinner>
+  (Session info: chrome=132.0.6834.84)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c74ec836c4fac83618bb65b87b62b730, clickElement {id=f.AC82E7CED9000E393AA330E97AE21C3A.d.72AF977089AB3C4091AE653231791007.e.590}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /var/folders/rs/cq6v688s0z3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64967/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c74ec836c4fac83618bb65b87b62b730)] -> xpath: //button[@class='slds-button slds-button_outline-brand slds-m-left_x-small login-button']]
+Session ID: c74ec836c4fac83618bb65b87b62b730]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="slds-button slds-button_outline-brand slds-m-left_x-small login-button" data-id="Log_In" c-ownsignuplogin_ownsignuplogin="">...</button> is not clickable at point (1312, 25). Other element would receive the click: <lightning-spinner c-ownglobalheader_ownglobalheader="" size="large" class="slds-spinner_container" lwc-47dd688sbro-host=""></lightning-spinner>
+  (Session info: chrome=132.0.6834.84)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c74ec836c4fac83618bb65b87b62b730, clickElement {id=f.AC82E7CED9000E393AA330E97AE21C3A.d.72AF977089AB3C4091AE653231791007.e.590}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /var/folders/rs/cq6v688s0z3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64967/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c74ec836c4fac83618bb65b87b62b730)] -> xpath: //button[@class='slds-button slds-button_outline-brand slds-m-left_x-small login-button']]
+Session ID: c74ec836c4fac83618bb65b87b62b730
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at com.pages.HomePage.clickLogout(HomePage.java:250)
+at parallel.ManageProfileStepDefination.a_new_verification_code_is_sent_to_the_new_number_and_check_the_email_if_the_phone_is_updated_or_not(ManageProfileStepDefination.java:431)
+at ✽.a new verification code is sent to the new number and check the email if the phone is updated or not(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.FailedRun@34a3d150]" started-at="2025-01-17T20:44:20 IST" name="tearDownClass" finished-at="2025-01-17T20:44:22 IST" duration-ms="2100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="sendReport()[pri:0, instance:parallel.FailedRun@34a3d150]" started-at="2025-01-17T20:44:22 IST" name="sendReport" finished-at="2025-01-17T20:44:28 IST" duration-ms="5740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendReport -->
+      </class> <!-- parallel.FailedRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

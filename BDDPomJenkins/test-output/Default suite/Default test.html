@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 17 20:40:01 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>260 seconds (260514 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='parallel.FailedRun.runScenario()'><b>runScenario</b><br>Test class: parallel.FailedRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "(MFA - Manage Profile Test) Change Email in an MFA Enabled Site (Manage Profile Frequency  = 0 (Every action))", "Optional[Manage profile Automation]"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at parallel.ManageProfileStepDefination.if_the_change_email_is_successful_user_is_logged_in(ManageProfileStepDefination.java:369)
+	at ✽.if the change email is successful user is logged in(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:60)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1589952847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589952847'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at parallel.ManageProfileStepDefination.if_the_change_email_is_successful_user_is_logged_in(ManageProfileStepDefination.java:369)
+	at ✽.if the change email is successful user is logged in(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:60)
+</pre></div></td>
+<td>227</td>
+<td>parallel.FailedRun@34a3d150</td></tr>
+<tr>
+<td title='parallel.FailedRun.runScenario()'><b>runScenario</b><br>Test class: parallel.FailedRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "(MFA - Manage Profile Test) Change Phone Number  (Manage Profile Frequency  = 0 (Every action)) - in an MFA Enabled Site", "Optional[Manage profile Automation]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;slds-button slds-button_outline-brand slds-m-left_x-small login-button&quot; data-id=&quot;Log_In&quot; c-ownsignuplogin_ownsignuplogin=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1312, 25). Other element would receive the click: &lt;lightning-spinner c-ownglobalheader_ownglobalheader=&quot;&quot; size=&quot;large&quot; class=&quot;slds-spinner_container&quot; lwc-47dd688sbro-host=&quot;&quot;&gt;&lt;/lightning-spinner&gt;
+  (Session info: chrome=132.0.6834.84)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.2&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c74ec836c4fac83618bb65b87b62b730, clickElement {id=f.AC82E7CED9000E393AA330E97AE21C3A.d.72AF977089AB3C4091AE653231791007.e.590}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /var/folders/rs/cq6v688s0z3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64967/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c74ec836c4fac83618bb65b87b62b730)] -&gt; xpath: //button[@class=&apos;slds-button slds-button_outline-brand slds-m-left_x-small login-button&apos;]]
+Session ID: c74ec836c4fac83618bb65b87b62b730
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.pages.HomePage.clickLogout(HomePage.java:250)
+	at parallel.ManageProfileStepDefination.a_new_verification_code_is_sent_to_the_new_number_and_check_the_email_if_the_phone_is_updated_or_not(ManageProfileStepDefination.java:431)
+	at ✽.a new verification code is sent to the new number and check the email if the phone is updated or not(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace334910170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace334910170'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;slds-button slds-button_outline-brand slds-m-left_x-small login-button&quot; data-id=&quot;Log_In&quot; c-ownsignuplogin_ownsignuplogin=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1312, 25). Other element would receive the click: &lt;lightning-spinner c-ownglobalheader_ownglobalheader=&quot;&quot; size=&quot;large&quot; class=&quot;slds-spinner_container&quot; lwc-47dd688sbro-host=&quot;&quot;&gt;&lt;/lightning-spinner&gt;
+  (Session info: chrome=132.0.6834.84)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.2&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c74ec836c4fac83618bb65b87b62b730, clickElement {id=f.AC82E7CED9000E393AA330E97AE21C3A.d.72AF977089AB3C4091AE653231791007.e.590}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /var/folders/rs/cq6v688s0z3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64967/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (c74ec836c4fac83618bb65b87b62b730)] -&gt; xpath: //button[@class=&apos;slds-button slds-button_outline-brand slds-m-left_x-small login-button&apos;]]
+Session ID: c74ec836c4fac83618bb65b87b62b730
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+	at com.pages.HomePage.clickLogout(HomePage.java:250)
+	at parallel.ManageProfileStepDefination.a_new_verification_code_is_sent_to_the_new_number_and_check_the_email_if_the_phone_is_updated_or_not(ManageProfileStepDefination.java:431)
+	at ✽.a new verification code is sent to the new number and check the email if the phone is updated or not(file:///Users/YE20422461/eclipse-workspace/BDDWithPOM/src/test/resources/parallel/ManageProfile.feature:81)
+</pre></div></td>
+<td>258</td>
+<td>parallel.FailedRun@34a3d150</td></tr>
+</table><p>
+</body>
+</html>
