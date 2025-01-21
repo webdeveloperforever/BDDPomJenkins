@@ -11,7 +11,7 @@ import com.qa.util.SendEmail;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
-		features = {"src/test/resources/parallel/ManageProfile.feature"},
+		features = {"src/test/resources/parallel/MfaLogin.feature"},
 		glue = {"parallel"},
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

@@ -173,7 +173,7 @@ public class LoginPage {
 		excelUtils = new ExcelUtils(excelFilePath);
 		serviceProviderurls = excelUtils.readExcelData("QA_Service_Providers_Data", "Url");
 		credentials = excelUtils.readExcelData("SiteCredential", "Credentials");
-		serviceProviderUrl = serviceProviderurls.get(0);
+		serviceProviderUrl = serviceProviderurls.get(1);
 	}
 
 	public void openLoginPage(String url) {

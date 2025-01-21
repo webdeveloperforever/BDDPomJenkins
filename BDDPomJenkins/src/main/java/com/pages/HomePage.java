@@ -106,7 +106,7 @@ public class HomePage {
 		String excelFilePath = prop.getProperty("excelpath");
 		excelUtils = new ExcelUtils(excelFilePath);
 		serviceProviderurls = excelUtils.readExcelData("QA_Service_Providers_Data", "Url");
-		serviceProviderUrl = serviceProviderurls.get(0);
+		serviceProviderUrl = serviceProviderurls.get(1);
 	}
 
 	public boolean verifyUsername(String name) throws InterruptedException {
